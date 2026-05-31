@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //  fining the factorial of a number
+              var number = 9 ;
+
+
+                         if (number < 0){
+                           console.log("the factorial of a negative number does not exist")
+                          }
+                         else if (number === 0){
+            console.log("the factorial of 0 is 1")
+         }    
+         else {
+              factorial =1 ;
+            for (var i =1 ; i <= number ; i++){
+               factorial *= i ;
+          }
+
+         }    
+         console.log("the factorial of " + number + " is " + factorial);
+
+
+
+
+        //  prime and composite numbers
+
+
+        var number = 17;
+        var a = 0;
+
+        for (var i = 1; i <= number; i++) {
+            if (number % i === 0) {
+                a++;
+            }
+        }
+
+        if (number <= 1) {
+            console.log(number + " is neither prime nor composite");
+        }
+        else if (a === 2) {
+            console.log(number + " is a prime number");
+        }
+        else {
+            console.log(number + " is a composite number");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
